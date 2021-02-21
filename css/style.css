@@ -1,0 +1,497 @@
+body {
+  background: linear-gradient(to right, rgb(61, 121, 218) 40%, white 40%);
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#main {
+  margin-top: 2%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+#anotherDiv {
+  display: flexbox;
+  flex: 0 0 550px;
+  flex-direction: column;
+}
+
+#typed {
+  font-size: 50px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#text {
+  border: 0px solid rgb(61, 121, 218);
+  width: 300px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+
+#input {
+  border: 0px solid white;
+  border-radius: 10px;
+  width: 400px;
+  background-color: rgb(53, 108, 180);
+}
+label {
+  color: white;
+  font-size: larger;
+}
+
+#email {
+  padding: 8px;
+  margin-top: 10px;
+  /* width: 1px; */
+}
+#submit {
+  font-size: 23px;
+  color: white;
+  background-color: rgb(8, 206, 255);
+  width: 50px;
+  cursor: pointer;
+}
+.borderLess {
+  border: none;
+  outline: none;
+}
+
+footer {
+  font-size: 11px;
+  margin-top: 20px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 2px solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 53%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+#go-down {
+  display: flex;
+  flex-direction: column;
+}
+
+.bank {
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.verticalLine {
+  border-left: 2px dashed rgba(0, 0, 0, 0.466);
+  height: 700px;
+  padding: 2px;
+  margin-left: 1px;
+}
+.circle {
+  margin-top: 7px;
+  font-size: 10px;
+  padding: 6px;
+}
+.circle-big {
+  display: flex;
+  flex-direction: column;
+}
+.circle-big p {
+  font-size: 10px;
+}
+
+.image {
+  margin-top: 140px;
+}
+.bancBox {
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-radius: 0px 0px 70px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.294);
+  height: fit-content;
+  width: 200px;
+}
+
+.highLight {
+  background-color: rgb(160, 176, 247);
+  border-radius: 30px;
+  text-align: center;
+}
+.textHighLight {
+  color: rgb(255, 0, 0);
+  font-size: small;
+}
+.typed {
+  font-size: 40px;
+}
+
+@media (min-width: 50px) {
+  body {
+    background: rgb(61, 121, 218);
+  }
+  .typed {
+    font-size: 20px;
+  }
+  #typed {
+    font-size: 20px;
+  }
+  #companyName {
+    width: 100px;
+  }
+  .shortText {
+    font-size: 8px;
+  }
+
+  #input {
+    width: 170px;
+  }
+  label {
+    font-size: 10px;
+  }
+  #submit {
+    width: 25px;
+    font-size: 20px;
+  }
+  #email {
+    width: 100%;
+  }
+
+  /* .qrCode {
+    width: 250px;
+  }
+  .qrCode img {
+    width: 100%;
+  } */
+  .circle {
+    font-size: 6px;
+    width: 20px;
+  }
+  .sitting {
+    /* display: none; */
+  }
+  .showInSmall {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  #go-down {
+    display: none;
+  }
+}
+
+@media (min-width: 351px) {
+  body {
+    background: rgb(61, 121, 218);
+  }
+  .typed {
+    font-size: 35px;
+  }
+  #typed {
+    font-size: 35px;
+  }
+  #companyName {
+    width: 290px;
+  }
+  .shortText {
+    font-size: 12px;
+  }
+
+  #input {
+    width: 300px;
+  }
+  label {
+    font-size: 14px;
+  }
+  #email {
+    width: 200px;
+  }
+  .circle {
+    font-size: 10px;
+    width: 30px;
+  }
+
+  .showInSmall {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  #go-down {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  body {
+    background: rgb(61, 121, 218);
+  }
+  .typed {
+    font-size: 35px;
+  }
+  #typed {
+    font-size: 35px;
+  }
+  #companyName {
+    width: 350px;
+  }
+  .shortText {
+    font-size: 16px;
+  }
+
+  #input {
+    width: 350px;
+  }
+  label {
+    font-size: 16px;
+  }
+  #email {
+    width: 250px;
+  }
+  .circle {
+    font-size: 10px;
+    width: 20px;
+  }
+
+  .showInSmall {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  #go-down {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background: rgb(61, 121, 218);
+  }
+  #main {
+    justify-content: center;
+    align-items: center;
+  }
+  .typed {
+    font-size: 40px;
+  }
+  #typed {
+    font-size: 40px;
+  }
+  #companyName {
+    width: 500px;
+  }
+  .shortText {
+    font-size: 20px;
+  }
+  #text {
+    width: 100%;
+  }
+
+  #input {
+    width: 100%;
+  }
+  label {
+    font-size: 20px;
+  }
+  #email {
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+  }
+  #submit {
+    font-size: 30px;
+    width: 70px;
+    height: 40px;
+  }
+
+  .sitting {
+    width: 98%;
+  }
+  .circle img {
+    width: 50px;
+  }
+  .circle {
+    width: 90px !important;
+    font-size: 12px;
+  }
+
+  .showInSmall {
+    width: 100%;
+  }
+  #go-down {
+    display: none;
+  }
+}
+
+@media (min-width: 801px) {
+  body {
+    background: rgb(61, 121, 218);
+  }
+
+  .typed {
+    font-size: 45px;
+  }
+  #typed {
+    font-size: 45px;
+  }
+  #companyName {
+    width: 350px;
+  }
+  .shortText {
+    font-size: 16px;
+  }
+
+  #input {
+    width: 350px;
+  }
+  label {
+    font-size: 16px;
+  }
+  #email {
+    width: 250px;
+  }
+  .circle {
+    float: right;
+  }
+
+  .showInSmall {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  #go-down {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: rgb(61, 121, 218);
+  }
+  #main {
+    justify-content: center;
+    align-items: center;
+  }
+  .typed {
+    font-size: 45px;
+  }
+  #typed {
+    font-size: 45px;
+  }
+  #companyName {
+    width: 300px;
+  }
+  .shortText {
+    font-size: 20px;
+  }
+  #text {
+    width: 70%;
+  }
+
+  #input {
+    width: 70%;
+  }
+  label {
+    font-size: 15px;
+  }
+  #email {
+    width: 77%;
+    font-size: 15px;
+  }
+  #submit {
+    font-size: 25px;
+    width: 60px;
+    height: 40px;
+  }
+  .circle img {
+    width: 40px;
+  }
+  .circle {
+    /* width: 50px !important; */
+    font-size: 10px;
+  }
+
+  .showInSmall {
+    width: 100%;
+  }
+  #go-down {
+    display: none;
+  }
+}
+@media (min-width: 1281px) {
+  body {
+    background: linear-gradient(to right, rgb(61, 121, 218) 40%, white 40%);
+  }
+  .showInSmall {
+    display: none;
+  }
+  #main {
+    display: flex;
+    flex-direction: row;
+  }
+  #go-down {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1361px) {
+  body {
+    background: linear-gradient(to right, rgb(61, 121, 218) 40%, white 40%);
+  }
+
+  .showInSmall {
+    display: none;
+  }
+  #main {
+    display: flex;
+    flex-direction: row;
+  }
+  #go-down {
+    display: flex;
+  }
+  .circle {
+    width: 20px;
+  }
+  .image {
+    width: 200px;
+  }
+
+  .bancBox {
+    /* width: fit-content; */
+  }
+}
